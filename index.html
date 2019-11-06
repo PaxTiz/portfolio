@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Valentin Cernuta</title>
+	
+	<link rel="stylesheet" href="assets/Semantic-UI-CSS-master/semantic.min.css">
+	<link rel="stylesheet" href="assets/Semantic-UI-CSS-master/components/icon.min.css">
+	<link rel="stylesheet" href="assets/Semantic-UI-CSS-master/components/sidebar.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="assets/Semantic-UI-CSS-master/semantic.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.masthead').visibility({
+				once: false,
+				onBottomPassed: function() {
+					$('.fixed.menu').transition('fade in');
+				},
+				onBottomPassedReverse: function() {
+					$('.fixed.menu').transition('fade out');
+				}
+			})
+			$('.ui.sidebar').sidebar('attach events', '.toc.item')
+		})
+	</script>
+
+	<style type="text/css">
+		.hidden.menu { display: none; }
+	
+		.masthead.segment {
+		  	min-height: 700px;
+		  	padding: 1em 0em;
+		}
+		.masthead .logo.item img { margin-right: 1em; }
+		.masthead .ui.menu .ui.button { margin-left: 0.5em; }
+		.masthead h1.ui.header {
+		  	margin-top: 3em;
+		  	margin-bottom: 0em;
+		  	font-size: 4em;
+		  	font-weight: normal;
+		}
+		.masthead h2 {
+		  	font-size: 1.7em;
+		  	font-weight: normal;
+		}
+	
+		.ui.vertical.stripe { padding: 8em 0em; }
+		.ui.vertical.stripe h3 { font-size: 2em; }
+
+		.ui.vertical.stripe .button + h3,
+		.ui.vertical.stripe p + h3 { margin-top: 3em; }
+
+		.ui.vertical.stripe .floated.image { clear: both; }
+		.ui.vertical.stripe p { font-size: 1.33em; }
+		.ui.vertical.stripe .horizontal.divider { margin: 3em 0em; }
+	
+		.quote.stripe.segment { padding: 0em; }
+		.quote.stripe.segment .grid .column {
+		  	padding-top: 5em;
+		  	padding-bottom: 5em;
+		}
+	
+		.footer.segment { padding: 5em 0em; }
+		.secondary.pointing.menu .toc.item { display: none; }
+	
+		@media only screen and (max-width: 700px) {
+		  	.ui.fixed.menu { display: none !important; }
+
+		  	.secondary.pointing.menu .item,
+		  	.secondary.pointing.menu .menu { display: none; }
+		  	.secondary.pointing.menu .toc.item { display: block; }
+		  	.masthead.segment { min-height: 350px; }
+		  	.masthead h1.ui.header {
+				font-size: 2em;
+				margin-top: 1.5em;
+		  	}
+		  	.masthead h2 {
+				margin-top: 0.5em;
+				font-size: 1.5em;
+		  	}
+		}
+	</style>
+</head>
+<body>
+	<!-- Following Menu -->
+	<div class="ui large top fixed hidden menu" id="navbar">
+		<div class="ui container">
+			<a class="item" href="#home">Accueil</a>
+			<a class="item" href="#about">Informations</a>
+			<a class="item" href="#skills">Compétences</a>
+			<a class="item" href="#works">Projets</a>
+			<a class="item" href="#cv">CV</a>
+			<a class="item" href="#contact">Contact</a>
+			
+			<div class="right menu">
+				<div class="item">
+			  		<a class="ui button">
+						<img src="./assets/img/fr-flag.png" alt="Traduction en français" class="img-lang">
+					</a>
+				</div>
+				<div class="item">
+			  		<a class="ui button" href="en.html">
+						<img src="./assets/img/en-flag.png" alt="English tranduction" class="img-lang">
+					</a>
+				</div>
+		  	</div>
+		</div>
+	</div>
+	  
+	<div class="ui vertical inverted sidebar menu">
+		<a class="item" href="#home">Accueil</a>
+		<a class="item" href="#about">Informations</a>
+		<a class="item" href="#skills">Compétences</a>
+		<a class="item" href="#works">Projets</a>
+		<a class="item" href="#cv">CV</a>
+		<a class="item" href="#contact">Contact</a>
+	</div>
+
+	<!-- Page Contents -->
+	<div class="pusher" id="home">
+		<div class="ui inverted vertical masthead center aligned segment">
+	  
+			<div class="ui container">
+				<div class="ui large secondary inverted pointing icon menu">
+			  	<a class="toc item"><i class="sidebar icon"></i></a>
+				<a class="active item" href="#home">Accueil</a>
+				<a class="item" href="#about">Informations</a>
+				<a class="item" href="#skills">Compétences</a>
+				<a class="item" href="#works">Projets</a>
+				<a class="item" href="#cv">CV</a>
+				<a class="item" href="#contact">Contact</a>
+				  
+				<div class="right item">
+					<a class="ui inverted button">
+						<img src="./assets/img/fr-flag.png" alt="Traduction en français" class="img-lang">
+					</a>
+					<a class="ui inverted button" href="en.html">
+						<img src="./assets/img/en-flag.png" alt="English tranduction" class="img-lang">
+					</a>
+			  	</div>
+			</div>
+		</div>
+	  
+		<div class="ui text container">
+			<h1 class="ui inverted header header-title">
+				Valentin Cernuta
+			</h1>
+			<h2 class="header-subtitle">Étudiant en DUT Informatique, je souhaite devenir développeur d'applications mobiles.</h2>
+		</div>  
+	</div>
+	  
+	<div class="ui vertical stripe segment" id="about">
+		<div class="ui middle aligned stackable grid container">
+			<div class="row">
+				<div class="eight wide column">
+					<h3 class="ui header">A propos</h3>
+					<p>Je m'appelle Valentin Cernuta, j'ai 19 ans et j'habite Bully-Les-Mines.</p>
+					<p>Je suis disponible sur les villes de Lens, Arras & Lille.</p>
+					<p>Je peux parler en français (langue maternelle) ainsi qu'en anglais (niveau B2).</p>
+					<h3 class="ui header">DUT Informatique</h3>
+					<p>En cours à l'IUT de Lens depuis 2018</p>
+					<h3 class="ui header">Baccauléat Science et Technologies de l'Industrie et du Développement Durable</h3>
+					<p>Première et terminale au lycée Edmond Labbé à Douai de 2016 à 2018</p>
+				</div>
+				<div class="six wide right floated column">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Logo_IUT_Lens.svg/512px-Logo_IUT_Lens.svg.png" class="ui large bordered rounded image">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui vertical stripe segment" id="skills">
+		<div class="ui middle aligned stackable container">
+			<div class="ui equal width stackable internally grid">
+				<h1>Mes compétences</h1>
+				<div class="row">
+					<div class="five wide column">
+						<!-- WEB CARD -->
+						<div class="ui card">
+							<div class="content">
+								<div class="center aligned header">Web</div>
+								<div class="center aligned description">
+									<p>HTML/CSS - PHP (Laravel)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="five wide column">
+						<!-- LANGUAGES CARD -->
+						<div class="ui card bg-blue">
+							<div class="center aligned content">
+								<div class="center aligned header">Langages</div>
+								<div class="center aligned description">
+									<p>Java, Python, Dart & Swift</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="five wide column">
+						<!-- OS CARD -->
+						<div class="ui card">
+							<div class="content">
+								<div class="center aligned header">Systèmes d'exploitations</div>
+								<div class="center aligned description">
+									<p>macOS, Linux, Android, iOS</p>
+								</div>
+							</div>
+						</div> <!--- END OS CARD -->
+					</div> <!--- END COLUMN -->
+				</div> <!--- END ROW -->
+				<div class="row">
+					<div class="five wide column">
+						<!-- WEB CARD -->
+						<div class="ui card bg-blue">
+							<div class="content">
+								<div class="center aligned header">Outils</div>
+								<div class="center aligned description">
+									<p>Suite Jetbrains, Visual Studio Code, XCode, Android Studio, Git & GitHub, Slack & Trello </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="five wide column">
+						<!-- LANGUAGES CARD -->
+						<div class="ui card">
+							<div class="content">
+								<div class="center aligned header">Base de données</div>
+								<div class="center aligned description">
+									<p> SQLite, PostgreSQL, MySQL </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="five wide column">
+						<!-- OS CARD -->
+						<div class="ui card bg-blue">
+							<div class="content">
+								<div class="center aligned header">Qualités</div>
+								<div class="center aligned description">
+									<p> Passionné, Rigoureux, Curieux, Patient & Courageux </p>
+								</div>
+							</div>
+						</div> <!--- END OS CARD -->
+					</div> <!--- END COLUMN -->
+				</div> <!--- END ROW -->
+			</div>
+		</div>
+	</div>
+	  
+	  
+	<div class="ui vertical stripe segment" id="works">
+		<div class="ui middle aligned stackable container">
+			<div class="ui equal width stackable internally grid">
+				<h1>Mes réalisations</h1>
+				<div class="row">
+					<div class="column">
+						<div class="ui card">
+							<div class="image">
+								<img src="./assets/img/projects/iut-informatique.png">
+							</div>
+							<div class="content">
+								<div class="right floated">
+									Site web
+								</div>
+								<div class="header">Refonte du site web iut-informatique.fr</div>
+								<div class="meta">HTML & CSS</div>
+								<div class="description">
+									Lors du premier semestre de DUT Informatique, j'ai du, en groupe de 3, réaliser la refonte du site internet iut-informatique.fr. Nous avons utilisés les technologies HTML et CSS, ainsi que l'API de OpenStreetMap pour afficher une carte interactive et le framework Material Design Lite pour l'apparence.
+								</div>
+							</div>
+							<div class="extra content">
+								<a href="https://github.com/vcernuta/projet-s1-lens">Lien vers Github</a>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="ui card">
+							<div class="image">
+								<img src="./assets/img/projects/game.png">
+							</div>
+							<div class="content">
+								<div class="right floated">
+									Jeu
+								</div>
+								<div class="header">Jeu du style "Bomberman"</div>
+								<div class="meta">Java &  JavaFX</div>
+								<div class="description">
+									En tant que projet du semestre 2 de DUT Informatique, nous avions dû réaliser un jeu en groupe de 2. Celui-ci s'inspire du Bomberman originel. Les technologies utiliséee sont Java et JavaFX. Il y a un menu principal, un menu de pause, un menu de mort ainsi que le jeu en lui-même, et il est même possible de recommencer une partie. 
+								</div>
+							</div>
+							<div class="extra content">
+								<a href="https://github.com/vcernuta/projet-s2-lens">Lien vers Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<div class="ui card">
+							<div class="content">
+								<div class="right floated">
+									Application mobile
+								</div>
+								<div class="header">Réseau social mobile</div>
+								<div class="meta">Dart & Flutter</div>
+								<div class="description">
+									Après avoir appris les bases du développement d'applications en Dart avec le framework Flutter, j'ai réalisé une application sous la forme d'un réseau social. Celui-ci est composé de différents salons de tchat auquels on peut s'abonner, et dans lesquels il est possible d'envoyer des messages et les partager avec tous les abonnés du salon. L'application est insipirée de Reddit.
+								</div>
+							</div>
+							<div class="extra content">
+								<a href="https://github.com/PaxTiz/social_network_app">Lien vers Github</a>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="ui card">
+							<div class="content">
+								<div class="right floated">
+									Application mobile
+								</div>
+								<div class="header">Messagerie "chiffrée"</div>
+								<div class="meta">Dart & Flutter</div>
+								<div class="description">
+									Afin  de découvrir l'usage du carnet de contacts et des SMS, j'ai tenté de développer une application qui permet d'envoyer des messages à ses contacts, tout en "chiffrant" ceux-cis en effectuant simplement une rotation des lettres. Les conversations sont protégées par un mot de passe, donc seul le propriétaire de celle-ci peut y accéder et avoir accès aux messages partagés avec le destinataire en clair.
+								</div>
+							</div>
+							<div class="extra content">
+								<a href="">Lien vers Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	  
+	<div class="ui vertical stripe segment" id="cv">
+		<div class="ui text container">
+			<h1>Mon CV</h1>
+			<form method="get" action="assets/valentin-cernuta.pdf">
+				<button class="ui large primary button" type="submit">Télécharger en PDF</button>
+			</form>
+		</div>
+	</div>
+	  
+	  
+    <div class="ui inverted vertical footer segment" id="contact">
+		<div class="ui container">
+			<div class="ui stackable inverted divided equal height stackable grid">
+				<div class="three wide column">
+					<h4 class="ui inverted header">A propos</h4>
+					<div class="ui inverted link list">
+						<a href="#" class="item"><i class="location arrow icon"></i> Bully-Les-Mines</a>
+						<a href="#" class="item"><i class="phone icon"></i> 0668087552</a>
+						<a href="mailto:vcernuta@protonmail.com" class="item"><i class="envelope icon"></i> vcernuta@protonmail.com</a>
+					</div>
+				</div>
+				<div class="three wide column">
+					<h4 class="ui inverted header">Social Networks</h4>
+					<div class="ui inverted link list">
+						<a href="https://www.facebook.com/valentin.cnt.94" class="item"><i class="facebook f icon"></i> Valentin Cnt</a>
+						<a href="https://www.linkedin.com/in/valentin-cernuta-681054171/" class="item"><i class="linkedin icon"></i> Valentin Cernuta</a>
+						<a href="https://github.com/PaxTiz" class="item"><i class="github icon"></i> PaxTiz</a>
+						<a href="https://github.com/vcernuta" class="item"><i class="github icon"></i> vcernuta</a>
+					</div>
+				</div>
+				<div class="seven wide column">
+					<h4 class="ui inverted header">A propos de ce site</h4>
+					<p>Réalisé avec <i class="heart icon"></i>en utilisant le framework <a href="https://semantic-ui.com/">Semantic UI</a> et beaucoup de <i class="coffee icon"></i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

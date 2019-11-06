@@ -1,0 +1,67 @@
+@import "fonts.css";
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: "Orkney", sans-serif !important;
+}
+
+h1:not(.header-title) {
+    margin-top: -1em !important;
+}
+
+.img-lang {
+    width: 20px;
+    cursor: pointer;
+}
+ 
+.header-title {
+    background-image: url('../img/landing/landing.001.jpeg');
+    border: 2px solid #fff !important;
+    border-radius: 10px;
+    padding: 20px !important;
+    font-family: "Inconsolata Bold" !important;
+}
+
+.header-subtitle {
+    font-size: 1em !important;
+}
+
+#skills .card {
+    height: 150px;
+    padding: 20px !important;
+}
+
+.card.bg-blue {
+    background-color: #2185D0;
+    box-shadow: 0 5px 10px #2185D0;
+    border: none !important;
+}
+
+.card.bg-blue .header,
+.card.bg-blue .description {
+    color: #fff !important;
+}
+
+#skills .description {
+    font-size: 0.8em;
+}
+
+.description {
+    text-align: justify;
+}
+
+.ui.card {
+    width: 500px;
+}
+
+.social-network-project {
+    width: 10%;
+    height: auto;
+}
+
+i.icon.content::before {
+    content: "\f0c9";
+}
