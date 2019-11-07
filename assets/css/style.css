@@ -1,7 +1,7 @@
 @import "fonts.css";
 
 * {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;   
 }
 
 body {
