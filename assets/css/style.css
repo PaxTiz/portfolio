@@ -84,3 +84,7 @@ i.icon.content::before {
 #card-tools > div {
     padding-top: 0;
 }
+
+.ui.secondary.inverted.pointing.menu {
+    border: none;
+}
