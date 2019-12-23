@@ -30,7 +30,9 @@ h1:not(.header-title) {
     border: 5px solid #fff !important;
     border-radius: 10px;
     padding: 20px !important;
-    font-family: "Inconsolata Bold", sans-serif !important;
+    font-family: "Avenir Next Condensed", sans-serif !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
 }
 
 .header-subtitle {
