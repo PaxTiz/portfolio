@@ -5,23 +5,17 @@
 }
 
 body {
-    scroll-behavior: smooth;
     font-family: "Orkney", sans-serif !important;
 }
 
 #home > div:first-child {
-    background-image: url("../img/landing/landing.001.jpeg");
+    background-image: url("../img/landing/landing.001.webp");
     height: 100vh;
     background-size: cover;
 }
 
 h1:not(.header-title) {
     margin-top: -1em !important;
-}
-
-.img-lang {
-    width: 20px;
-    cursor: pointer;
 }
 
 .header-title {
@@ -41,18 +35,15 @@ h1:not(.header-title) {
 
 #skills .card {
     height: 150px;
-    padding: 20px !important;
 }
-
-.card.bg-blue {
-    background-color: #2185D0;
-    box-shadow: 0 5px 10px #2185D0;
-    border: none !important;
+#skills .card.alternate {
+    background-color: #e5e5e5;
 }
-
-.card.bg-blue .header,
-.card.bg-blue .description {
-    color: #fff !important;
+#skills .card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #skills .description {
@@ -65,11 +56,6 @@ h1:not(.header-title) {
 
 .ui.card {
     width: 500px;
-}
-
-.social-network-project {
-    width: 10%;
-    height: auto;
 }
 
 i.icon.content::before {
